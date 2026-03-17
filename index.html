@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SISM Souvenir Shop</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* same font as uju.html */
+}
+
+/* Header */
+h2 {
+  font-family: Arial, sans-serif; /* explicitly set */
+  color: #233e82;
+  font-size: 400%; /* matches uju.html */
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Navigation menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #233e82;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content { display: block; }
+
+/* Store info container */
+.container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.container img {
+  width: 600px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.container h1 {
+  font-size: 1.5em;
+  font-family: Arial, sans-serif; /* consistent font */
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  margin: 20px;
+  gap: 10px; /* space between items */
+}
+
+.gallery-item {
+  flex: 1;
+  text-align: center; /* center captions */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.gallery-item img:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.caption {
+  margin-top: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: Arial, sans-serif; /* consistent font */
+}
+
+/* Gallery description */
+.gallery-text {
+  text-align: center;
+  margin: 10px 20px 40px 20px;
+  font-size: 1.2em;
+  font-family: Arial, sans-serif; /* consistent font */
+}
+</style>
+</head>
+
+<body>
+
+<h2>SISM Souvenir Shop</h2>
+
+<!-- Navigation menu -->
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropdown">SISM Products</a>
+    <div class="dropdown-content">
+      <a href="uju.html">Souvenirs</a>
+      <a href="chenxi.html">Daily Use</a>
+      <a href="rio.html">Clothes</a>
+    </div>
+  </li>
+</ul>
+
+<!-- Store info -->
+<div class="container">
+  <img src="Outside.png" alt="Store">
+  <h1>
+     Our store sells a variety of items such as souvenirs, daily use, and clothes. It is located on the ground floor on the path of glory.
+<br><br>
+    Contact us: 0123456789
+  </h1>
+</div>
+
+<!-- Gallery -->
+<div class="gallery">
+  <div class="gallery-item">
+    <a href="uju.html">
+      <img src="Pens.JPG" alt="Souvenirs">
+    </a>
+    <div class="caption">Souvenirs</div>
+  </div>
+
+  <div class="gallery-item">
+    <a href="chenxi.html">
+      <img src="Dailyuse.jpg" alt="Daily Use">
+    </a>
+    <div class="caption">Daily Use</div>
+  </div>
+
+  <div class="gallery-item">
+    <a href="rio.html">
+      <img src="shirt.png" alt="Clothes">
+    </a>
+    <div class="caption">Clothes</div>
+  </div>
+</div>
+
+<!-- Gallery description -->
+<div class="gallery-text">
+<h4>Explore our collection and find the perfect item to take home!</h4>
+</div>
+
+</body>
+</html>
